@@ -1,0 +1,27 @@
+{
+  "name": "helper-tre-app",
+  "version": "1.0.0",
+  "description": "Sistema Help-TRE - Apoio a Cartorios de Zona Eleitoral para Gestao de Colaboradores nas Eleicoes",
+  "main": "index.js",
+  "scripts": {
+    "install-back": "npm --prefix helper-tre-api/ install",
+    "install-front": "npm --prefix helper-tre-front/ install",
+    "install-start-full": "npm run install-back && npm run install-front && npm run start-back && npm run start-front",
+    "start-full": "npm run start-back && npm run start-front",
+    "start": "npm run start-back && npm run start-front",
+    "start-front": "npm --prefix helper-tre-front/ run start",
+    "start-back": "npm --prefix helper-tre-api/ run start",
+    "debug-back": "npm --prefix helper-tre-api/ run debug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flaviosoliver/helper-tre-app.git"
+  },
+  "author": "Flavio Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flaviosoliver/helper-tre-app/issues"
+  },
+  "homepage": "https://github.com/flaviosoliver/helper-tre-app#readme"
+}
