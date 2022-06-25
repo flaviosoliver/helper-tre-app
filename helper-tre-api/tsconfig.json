@@ -9,7 +9,14 @@
     "target": "es2017",
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./",
+    "baseUrl": "src",
+    "rootDirs": ["src", "tests"],
+    "paths": {
+      "@/*": ["*"],
+      "@/tests/*": ["../tests/*"],
+      "@/data/*": ["data/*"],
+      "@/modules/*": ["modules/*"]
+    },
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": false,
